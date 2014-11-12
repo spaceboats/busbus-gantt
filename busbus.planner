@@ -21,76 +21,115 @@
     </calendar>
   </calendars>
   <tasks>
-    <task id="1" name="busbus platform" note="" work="8294304" start="20141105T000000Z" end="20150126T235820Z" work-start="20141105T000000Z" percent-complete="20" priority="0" type="normal" scheduling="fixed-work">
-      <task id="2" name="Core Python API" note="" work="1209586" start="20141105T000000Z" end="20141118T235820Z" work-start="20141105T000000Z" percent-complete="10" priority="0" type="normal" scheduling="fixed-work">
+    <task id="1" name="busbus platform" note="" work="12521129" start="20141105T000000Z" end="20150301T235820Z" work-start="20141105T000000Z" percent-complete="20" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="Core Python API" note="" work="1209586" start="20141105T000000Z" end="20141119T001320Z" work-start="20141105T000000Z" percent-complete="10" priority="0" type="normal" scheduling="fixed-work">
         <constraint type="must-start-on" time="20141105T000000Z"/>
       </task>
-      <task id="3" name="Core API test cases" note="" work="1209586" start="20141108T000000Z" end="20141121T235820Z" work-start="20141108T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="3" name="Core API test cases" note="" work="1209586" start="20141108T000000Z" end="20141122T001320Z" work-start="20141108T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="2" type="SS" lag="259200"/>
         </predecessors>
       </task>
-      <task id="4" name="Web API frontend" note="" work="259197" start="20141118T235820Z" end="20141121T235820Z" work-start="20141118T235820Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="4" name="Web API frontend" note="" work="259197" start="20141119T001320Z" end="20141122T001500Z" work-start="20141119T001320Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="2" type="FS"/>
         </predecessors>
       </task>
-      <task id="5" name="First 10 data providers" note="" work="1209586" start="20141123T235820Z" end="20141130T235820Z" work-start="20141123T235820Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="5" name="First 10 data providers" note="" work="3626280" start="20141124T001320Z" end="20141208T001320Z" work-start="20141124T001320Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="2" type="FS" lag="432000"/>
         </predecessors>
       </task>
-      <task id="6" name="First 25 data providers" note="" work="1814379" start="20141130T235820Z" end="20141211T115820Z" work-start="20141130T235820Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="6" name="First 25 data providers" note="" work="3453600" start="20141208T001320Z" end="20141228T001320Z" work-start="20141208T001320Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="5" type="FS"/>
         </predecessors>
       </task>
-      <task id="7" name="First 50 data providers" note="" work="2591970" start="20150112T000000Z" end="20150126T235820Z" work-start="20150112T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="7" name="First 50 data providers" note="" work="2590200" start="20150112T000000Z" end="20150126T235820Z" work-start="20150112T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <constraint type="start-no-earlier-than" time="20150112T000000Z"/>
         <predecessors>
           <predecessor id="1" predecessor-id="6" type="FS"/>
         </predecessors>
       </task>
+      <task id="8" name="Get provider for wherever Alex is moving" note="" work="172680" start="20150301T000000Z" end="20150301T235820Z" work-start="20150301T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20150301T000000Z"/>
+      </task>
     </task>
-    <task id="8" name="Applications" note="" work="9849486" start="20141001T000000Z" end="20150118T235820Z" work-start="20141001T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="9" name="LED board" note="" work="7430314" start="20141001T000000Z" end="20141030T000000Z" work-start="20141001T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="10" name="Research board hardware" note="" work="3023965" start="20141001T000000Z" end="20141007T235820Z" work-start="20141001T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-        <task id="11" name="Wait for board hardware order" note="" work="0" duration="604793" start="20141008T000000Z" end="20141014T235959Z" work-start="20141008T000000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+    <task id="9" name="Applications" note="" work="139357834" start="20141001T000000Z" end="20150510T235820Z" work-start="20141001T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="10" name="LED board" note="" work="7430314" start="20141001T000000Z" end="20141030T002000Z" work-start="20141001T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="11" name="Research board hardware" note="" work="3023965" start="20141001T000000Z" end="20141008T000640Z" work-start="20141001T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="12" name="Wait for board hardware order" note="" work="0" duration="604793" start="20141008T000000Z" end="20141015T000653Z" work-start="20141008T000000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
           <constraint type="must-start-on" time="20141008T000000Z"/>
         </task>
-        <task id="12" name="Assemble hardware for testing" note="" work="86399" start="20141014T235959Z" end="20141015T235820Z" work-start="20141015T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <predecessors>
-            <predecessor id="1" predecessor-id="11" type="FS"/>
-          </predecessors>
-        </task>
-        <task id="13" name="Write C++ board controller" note="" work="3628758" start="20141015T235820Z" end="20141029T235820Z" work-start="20141015T235820Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="13" name="Assemble hardware for testing" note="" work="86399" start="20141015T000653Z" end="20141016T000640Z" work-start="20141015T000653Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="12" type="FS"/>
           </predecessors>
         </task>
-        <task id="14" name="Write web frontend" note="" work="345596" start="20141025T235820Z" end="20141029T235820Z" work-start="20141025T235820Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="14" name="Write C++ board controller" note="" work="3628758" start="20141016T000640Z" end="20141030T002000Z" work-start="20141016T000640Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
-            <predecessor id="1" predecessor-id="13" type="SS" lag="864000"/>
+            <predecessor id="1" predecessor-id="13" type="FS"/>
           </predecessors>
         </task>
-        <task id="15" name="Final board assembly" note="" work="345596" start="20141027T235820Z" end="20141029T235820Z" work-start="20141027T235820Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="15" name="Write web frontend" note="" work="345596" start="20141026T000640Z" end="20141030T001000Z" work-start="20141026T000640Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
-            <predecessor id="1" predecessor-id="12" type="FS" lag="1036800"/>
+            <predecessor id="1" predecessor-id="14" type="SS" lag="864000"/>
           </predecessors>
         </task>
-        <task id="16" name="Min Kao event" note="" work="0" start="20141030T000000Z" end="20141030T000000Z" work-start="20141030T000000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <task id="16" name="Final board assembly" note="" work="345596" start="20141028T000640Z" end="20141030T000820Z" work-start="20141028T000640Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="13" type="FS" lag="1036800"/>
+          </predecessors>
+        </task>
+        <task id="17" name="Min Kao event" note="" work="0" start="20141030T000000Z" end="20141030T000000Z" work-start="20141030T000000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
           <constraint type="must-start-on" time="20141030T000000Z"/>
         </task>
       </task>
-      <task id="17" name="Android app" note="" work="1814379" start="20141105T000000Z" end="20141114T130500Z" work-start="20141105T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="18" name="Design mockups" note="" work="1814379" start="20141105T000000Z" end="20141114T130500Z" work-start="20141105T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <constraint type="must-start-on" time="20141105T000000Z"/>
+      <task id="18" name="Android app" note="" work="30909720" start="20141111T000000Z" end="20150226T161140Z" work-start="20141111T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="19" name="Design mockups" note="" work="2590200" start="20141111T000000Z" end="20141124T151500Z" work-start="20141111T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20141111T000000Z"/>
+        </task>
+        <task id="20" name="Android user interface" note="" work="8634000" start="20141124T151500Z" end="20141227T231320Z" work-start="20141124T151500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="19" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="21" name="Create Android app" note="" work="17268000" start="20141208T001320Z" end="20150212T161140Z" work-start="20141208T001320Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="5" type="FS"/>
+            <predecessor id="1" predecessor-id="19" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="22" name="Test / Improve Android app" note="" work="2417520" start="20150212T161140Z" end="20150226T161140Z" work-start="20150212T161140Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
         </task>
       </task>
-      <task id="19" name="Web app" note="" work="604793" start="20150112T000000Z" end="20150118T235820Z" work-start="20150112T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="23" name="Web app" note="" work="57847800" start="20141112T000000Z" end="20150510T235820Z" work-start="20141112T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <constraint type="start-no-earlier-than" time="20150113T000000Z"/>
-        <task id="20" name="Brainstorm web app ideas" note="" work="604793" start="20150112T000000Z" end="20150118T235820Z" work-start="20150112T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <constraint type="start-no-earlier-than" time="20150112T000000Z"/>
+        <task id="24" name="Brainstorm web app ideas" note="" work="43170000" start="20141112T000000Z" end="20150219T235820Z" work-start="20141112T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="start-no-earlier-than" time="20141112T000000Z"/>
+        </task>
+        <task id="25" name="Create mockups" note="" work="2590200" start="20150219T235820Z" end="20150301T235820Z" work-start="20150219T235820Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="24" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="26" name="Create web app" note="" work="7770600" start="20150301T235820Z" end="20150415T235820Z" work-start="20150301T235820Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="25" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="27" name="Test / Improve web app" note="" work="4317000" start="20150415T235820Z" end="20150510T235820Z" work-start="20150415T235820Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="26" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="28" name="LED Board app" note="" work="43170000" start="20141112T000000Z" end="20150219T235820Z" work-start="20141112T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="29" name="Brainstorm LED Board app ideas" note="" work="43170000" start="20141112T000000Z" end="20150219T235820Z" work-start="20141112T000000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="start-no-earlier-than" time="20141112T000000Z"/>
         </task>
       </task>
     </task>
@@ -104,29 +143,57 @@
     <resource id="5" name="Zane Ralston" short-name="ZR" type="1" units="0" email="" note="" std-rate="0"/>
   </resources>
   <allocations>
-    <allocation task-id="10" resource-id="1" units="100"/>
+    <allocation task-id="29" resource-id="1" units="100"/>
+    <allocation task-id="25" resource-id="1" units="100"/>
+    <allocation task-id="8" resource-id="1" units="100"/>
+    <allocation task-id="24" resource-id="1" units="100"/>
+    <allocation task-id="11" resource-id="1" units="100"/>
+    <allocation task-id="16" resource-id="1" units="100"/>
     <allocation task-id="15" resource-id="1" units="100"/>
     <allocation task-id="14" resource-id="1" units="100"/>
-    <allocation task-id="13" resource-id="1" units="100"/>
     <allocation task-id="7" resource-id="1" units="100"/>
     <allocation task-id="6" resource-id="1" units="100"/>
     <allocation task-id="5" resource-id="1" units="100"/>
-    <allocation task-id="18" resource-id="1" units="20"/>
+    <allocation task-id="19" resource-id="1" units="20"/>
     <allocation task-id="4" resource-id="1" units="100"/>
     <allocation task-id="2" resource-id="1" units="100"/>
-    <allocation task-id="12" resource-id="1" units="100"/>
-    <allocation task-id="10" resource-id="2" units="100"/>
-    <allocation task-id="15" resource-id="2" units="100"/>
-    <allocation task-id="13" resource-id="2" units="100"/>
-    <allocation task-id="18" resource-id="2" units="100"/>
-    <allocation task-id="10" resource-id="3" units="100"/>
+    <allocation task-id="13" resource-id="1" units="100"/>
+    <allocation task-id="29" resource-id="2" units="100"/>
+    <allocation task-id="27" resource-id="2" units="100"/>
+    <allocation task-id="26" resource-id="2" units="100"/>
+    <allocation task-id="25" resource-id="2" units="100"/>
+    <allocation task-id="8" resource-id="2" units="100"/>
+    <allocation task-id="24" resource-id="2" units="100"/>
+    <allocation task-id="20" resource-id="2" units="100"/>
+    <allocation task-id="5" resource-id="2" units="100"/>
+    <allocation task-id="21" resource-id="2" units="100"/>
+    <allocation task-id="11" resource-id="2" units="100"/>
+    <allocation task-id="16" resource-id="2" units="100"/>
+    <allocation task-id="14" resource-id="2" units="100"/>
+    <allocation task-id="19" resource-id="2" units="100"/>
+    <allocation task-id="29" resource-id="3" units="100"/>
+    <allocation task-id="22" resource-id="3" units="100"/>
+    <allocation task-id="24" resource-id="3" units="100"/>
+    <allocation task-id="11" resource-id="3" units="100"/>
     <allocation task-id="7" resource-id="3" units="100"/>
     <allocation task-id="6" resource-id="3" units="100"/>
     <allocation task-id="5" resource-id="3" units="100"/>
-    <allocation task-id="10" resource-id="4" units="100"/>
-    <allocation task-id="18" resource-id="4" units="100"/>
-    <allocation task-id="10" resource-id="5" units="100"/>
-    <allocation task-id="13" resource-id="5" units="100"/>
+    <allocation task-id="29" resource-id="4" units="100"/>
+    <allocation task-id="25" resource-id="4" units="100"/>
+    <allocation task-id="24" resource-id="4" units="100"/>
+    <allocation task-id="20" resource-id="4" units="100"/>
+    <allocation task-id="21" resource-id="4" units="100"/>
+    <allocation task-id="11" resource-id="4" units="100"/>
+    <allocation task-id="19" resource-id="4" units="100"/>
+    <allocation task-id="29" resource-id="5" units="100"/>
+    <allocation task-id="27" resource-id="5" units="100"/>
+    <allocation task-id="26" resource-id="5" units="100"/>
+    <allocation task-id="22" resource-id="5" units="100"/>
+    <allocation task-id="24" resource-id="5" units="100"/>
+    <allocation task-id="20" resource-id="5" units="100"/>
+    <allocation task-id="21" resource-id="5" units="100"/>
+    <allocation task-id="11" resource-id="5" units="100"/>
+    <allocation task-id="14" resource-id="5" units="100"/>
     <allocation task-id="3" resource-id="5" units="100"/>
   </allocations>
 </project>
